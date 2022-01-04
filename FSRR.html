@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FSRR</title>
+        <style>
+            .rr {
+                position: fixed;
+                left: calc(50% - 426px);
+                top: calc(50% - 240px);
+            }
+            
+            body
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body onclick="startAudio()">
+
+        Click this. I dare you.<video height="480" id="myvideo" class="rr" loop>
+        <source src="rr.mp4" type="video/mp4" autoplay>
+        <source src="rain.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+        </video>
+
+        <script>
+            function startAudio() {
+                var elem = document.getElementById("myvideo");
+                elem.play();
+            }
+        </script>
+    </body>
+</html>
